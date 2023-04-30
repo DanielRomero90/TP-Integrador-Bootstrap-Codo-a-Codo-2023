@@ -1,0 +1,31 @@
+   /*  div.carousel-caption {
+    position: absolute; 
+    right: 0%;
+    top: 0%; */ /* Cambiar bottom por top y los píxeles que necesites */
+   /*  left: 0%;
+    z-index: 0;
+    padding-top: 25%;
+    padding-left: 50%;
+    padding-right: 15%;
+    padding-bottom: 0;
+    color: #fff;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.8); */  /* Añadir para conseguir el fondo con opacidad */
+ 
+  div.carousel-inner div.carousel-item::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+    /* background: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)); */
+    content: "";
+  }  
+
+  .carousel-caption {
+    top: 20%;
+    padding-left: 36%;
+    bottom: auto;
+ }
+ 
