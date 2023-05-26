@@ -24,11 +24,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-link active" href="#">La conferencia <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#">Los oradores</a>
-            <a class="nav-link" href="#">El lugar y la fecha</a>
-            <a class="nav-link" href="#">Convierte en orador</a>
-            <a class="nav-link text-success" href="#">Comprar tickets</a>
+            <a class="nav-link active" href="#conferencia">La conferencia <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#oradores">Los oradores</a>
+            <a class="nav-link" href="#lugarYfecha">El lugar y la fecha</a>
+            <a class="nav-link" href="#inscripcionOrador">Convierte en orador</a>
+            <a class="nav-link text-success" href="./comprarTickets.html">Comprar tickets</a>
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@
   <main>
     <section>
       <!----------------------------------------------- Carousel-------------------------------------------------------->
-      <article class="container-extends">
+      <article class="container-extends" id="conferencia">
         <div id="carouselExampleIndicators" class="carousel slide transparencia" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -55,8 +55,8 @@
                   comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a
                   conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que
                   tenemos para ti. Te esperamos!. </p>
-                <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                <button type="button" class="btn btn-success " style="margin-left: 10px;">Comprar tickets</button>
+                <a href="#inscripcionOrador"><button type="button" class="btn btn-outline-light" >Quiero ser orador</button></a>
+                <a href="./comprarTickets.html"><button type="button" class="btn btn-success " style="margin-left: 10px;">Comprar tickets</button></a>
               </div>
             </div>
             <div class="carousel-item">
@@ -104,7 +104,7 @@
 
 
       <!-------------------------------------------------Tarjetas Oradores-------------------------------------------------------->
-      <article class="container">
+      <article class="container" id="oradores">
         <div class="card-deck">
           <div class="card">
             <img src="./img/steve.jpg" class="card-img-top" alt="...">
@@ -140,7 +140,7 @@
       <!---------------------------------------------Fin Tarjetas Oradores-------------------------------------------------------->
 
       <!---------------------------------------------Tarjeta Horizontal----------------------------------------------------------->
-      <article>
+      <article id="lugarYfecha">
         <div class="card w-100" style="margin-top: 30px;">
           <div class="row no-gutters">
             <div class="col-md-6">
@@ -168,7 +168,7 @@
       <!-----------------------------------------Fin Tarjeta Horizontal----------------------------------------------------------->
 
       <!----------------------------------------------Formulario--------------------------------------------------------------->
-      <article class="container">
+      <article class="container" id="inscripcionOrador">
         <div class="d-flex justify-content-center">
           <form class="needs-validation" novalidate>
             <div class="form-row ">
